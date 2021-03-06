@@ -1,0 +1,47 @@
+{% extends 'html/base.html' %}
+{% block title %} <title>Home</title>{% endblock %}
+{% block content %}
+
+<div class="container">
+    
+    <form action="{% url 'home' %}">
+        {% csrf_token %}
+        <div>
+            <table>
+                <tr>
+                    <td><input type="text" class="margin10 input" placeholder="full_name" name="full_name"></td>
+                    <td><input class="margin10 input" type="tel" placeholder="Tel" name="tel"></td>
+                </tr>
+                <tr>
+                    
+                    <td><input class="margin10 input" type="text" name="products" placeholder="Products"></td>
+                    <td><input class="margin10 input" type="number" name="summ" placeholder="Summa"></td>
+                </tr>
+                <tr>
+                    
+                    <td><input class="margin10 input" type="date" name="lifetime" placeholder="LifeTime"></td>
+                    <td><input class="btn btn-primary margin10 input" type="submit" value="Submit"></td>
+                </tr>
+                <tr>
+                    <td>passport olindimi?
+                        ha
+                        <input type="radio" name="radio" id="">
+                        yo'q
+                        <input type="radio" name="radio" id="">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>passport olindimi?
+                        <input type="checkbox" name="" id="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+     
+</div>
+
+
+
+{% endblock %}

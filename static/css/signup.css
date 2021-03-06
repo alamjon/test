@@ -1,0 +1,12 @@
+.divsignup {
+    width: 400px;
+    height: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: rgb(29, 27, 27) 1px 1px 5px;
+}
+#id_username {
+    margin-right: 50px;
+}
+.border_r{border-radius: 8px;}

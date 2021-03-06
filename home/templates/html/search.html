@@ -1,0 +1,33 @@
+{% extends 'html/base.html' %}
+{% block title %} <title>Search</title>{% endblock %}
+{% block content %}
+<table class="table">
+    <tr class="trr">
+        <th class="thh">id</th>
+        <th class="thh">name</th>
+        <th class="thh">last name</th>
+        <th class="thh">tel</th>
+        <th class="thh">passport</th>
+        <th class="thh">products</th>
+        <th class="thh">summ</th>
+        <th class="thh">date</th>
+        <th class="thh">lifetime</th>
+    </tr>
+    {% for items in sear %}
+
+    <tr class="trr">
+        <td class="tdd">{{items.id}}</td>
+        <td class="tdd">{{items.first}}</td>
+        <td class="tdd">{{items.last}}</td>
+        <td class="tdd">{{items.tel}}</td>
+        <td class="tdd">{{items.passport}}</td>
+        <td class="tdd">{{items.products}}</td>
+        <td class="tdd">{{items.summ}}</td>
+        <td class="tdd">{{items.date}}</td>
+        <td class="tdd">{{items.lifetime}}</td>
+    </tr>
+
+
+    {% endfor %}
+</table>
+{% endblock %}
